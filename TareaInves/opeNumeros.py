@@ -9,11 +9,10 @@ class Basico:
             i = i + 1
 
     def multiplo(self, numero):
-        acu = 1
-        multiplo = int(input('Ingrese el numero de multiplos que desea presentar: '))
-        for cont in range(1, multiplo+1):
-            acu = numero*cont
-            print(acu)
+        if multiplo % numero == 0:
+            print('El {}, es múltiplo del número {}'.format(multiplo,numero))
+        else:
+            print('El {}, no es múltiplo del número {}'.format(multiplo,numero))
 
     def DivisoresNumero(self, numero):
         acu = 1
