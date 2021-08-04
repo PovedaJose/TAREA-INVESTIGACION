@@ -139,6 +139,7 @@ while opc != 5:
                         except ValueError:
                             print('Dato erroneo. Ingrese nuevamente')
                     operacion = Basico()
+                    operacion1 = Intermedio()
 
                 if opc2 in range(1, 3) or opc2 == 7:
                     while True:
@@ -171,8 +172,9 @@ while opc != 5:
                     print(input('Toque ENTER para continuar ...'))
 
                 if opc2 == 3:
-                    print('<< múltiplos del número {} >>'.format(numero))
-                    operacion.multiplo(numero)
+                    print('<< Verificar si un número es múltiplo de otro>>')
+                    multiplo = int(input('Ingrese el número a verificar: '))
+                    operacion.multiplo(numero, multiplo)
                     print(input('Toque ENTER para continuar ...'))
 
                 if opc2 == 4:
